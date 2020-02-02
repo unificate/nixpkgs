@@ -121,7 +121,6 @@ let
           mkdir -p $out/bin
           for i in ${ruby}/bin/*; do
             makeWrapper "$i" $out/bin/$(basename "$i") \
-              --set BUNDLE_GEMFILE ${confFiles}/Gemfile \
               --set BUNDLE_PATH ${basicEnv}/${ruby.gemPath} \
               --set BUNDLE_FROZEN 1 \
               --set GEM_HOME ${basicEnv}/${ruby.gemPath} \

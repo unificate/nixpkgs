@@ -31,7 +31,6 @@ paths.each do |path|
 # this file is here to facilitate running it.
 #
 
-ENV["BUNDLE_GEMFILE"] = #{gemfile.dump}
 ENV["BUNDLE_PATH"] = #{bundle_path.dump}
 ENV['BUNDLE_FROZEN'] = '1'
 
